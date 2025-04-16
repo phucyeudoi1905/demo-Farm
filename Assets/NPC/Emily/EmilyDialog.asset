@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3e4d7ac5b2457f42b089ae034de4a8c, type: 3}
+  m_Name: EmilyDialog
+  m_EditorClassIdentifier: 
+  npcName: Emily
+  npcPortrait: {fileID: 1558553821, guid: db3879d80d8556b46981d26d98aede99, type: 3}
+  dialogueLines:
+  - This world is full of spirits and magic... Some don't believe me, but I know
+    it's true. I can see it in your eyes... you believe in the other world, like
+    me.
+  - I hope you're farming in a sustainable way. The valley's ecosystem is fragile!
+    How do I know? I have a strong gut-feeling!
+  - Hello there!!!
+  autoProgressLines: 000001
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 8300000, guid: 69f634bc01f65b44188efb3abadab648, type: 3}
+  voicePitch: 1
