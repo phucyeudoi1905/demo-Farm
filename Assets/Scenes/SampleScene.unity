@@ -16284,7 +16284,8 @@ Transform:
   m_LocalPosition: {x: 968.11365, y: 515.5738, z: -3.2067358}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 882978134}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &128880010
@@ -16300,7 +16301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryPanel: {fileID: 1315451165}
-  slotPrefabs: {fileID: 6278948631642049149, guid: 4050f028d8b62434f9d930e31fbfadd9, type: 3}
+  slotPrefab: {fileID: 6278948631642049149, guid: 4050f028d8b62434f9d930e31fbfadd9, type: 3}
   slotCount: 18
   itemPrefabs:
   - {fileID: 2377756500471802099, guid: f5605a2a8b8910149b959df8bcc18434, type: 3}
@@ -25123,6 +25124,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824564534}
   m_CullTransparentMesh: 1
+--- !u!1 &882978133
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 882978134}
+  - component: {fileID: 882978135}
+  m_Layer: 0
+  m_Name: ItemDictionary
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &882978134
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882978133}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 128880009}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &882978135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882978133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a29145eedc8a8e646844a64c2e87be3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemPrefabs:
+  - {fileID: 6767197082646084802, guid: f5605a2a8b8910149b959df8bcc18434, type: 3}
+  - {fileID: 3810895369861485617, guid: 954522aa5521ec24ba5006f97f8a3512, type: 3}
+  - {fileID: 8430691260776685106, guid: 24878f164d617304780d74365220edea, type: 3}
+  - {fileID: 810539544991850305, guid: c92aa3b374f9b51409a406cba01ef5c2, type: 3}
+  - {fileID: 6678355634424965501, guid: 649be377ce4877d4695d3651909466ff, type: 3}
+  - {fileID: 1835412653039955868, guid: b6938b75b4bcaa54cb34fbd357f4b6ed, type: 3}
+  - {fileID: 3851262989954036598, guid: eff41df06b276774aacc492aebc4e320, type: 3}
+  - {fileID: 1658964301506251851, guid: 3c953ae8a773f924fa37011b4d6e0c85, type: 3}
+  - {fileID: 3274564157368473769, guid: 26b1d2e29ef06e042aa01bc72a6298b0, type: 3}
 --- !u!1 &1016107762
 GameObject:
   m_ObjectHideFlags: 0
@@ -25392,6 +25447,7 @@ GameObject:
   - component: {fileID: 1294155470}
   - component: {fileID: 1294155472}
   - component: {fileID: 1294155473}
+  - component: {fileID: 1294155474}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -25666,6 +25722,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9471087, y: 2.8057334}
   m_EdgeRadius: 0
+--- !u!114 &1294155474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294155466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c7c068ef6849ec44bbcedbb9f90a172, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1315451165
 GameObject:
   m_ObjectHideFlags: 0
@@ -25684,7 +25752,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1315451166
 RectTransform:
   m_ObjectHideFlags: 0
@@ -79091,7 +79159,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2126739146
 RectTransform:
   m_ObjectHideFlags: 0
